@@ -1,4 +1,4 @@
-local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/Main/Library.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMinisterq/Notification-Library/main/Library.lua"))()
 NotificationLibrary:SendNotification("Success", "I'm a cool message", 3)
 NotificationLibrary:SendNotification("Warning", "I'm a cool message", 3)
 NotificationLibrary:SendNotification("Error", "I'm a cool message", 3)
