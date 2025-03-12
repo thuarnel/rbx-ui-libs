@@ -24,13 +24,13 @@ function Utilities.CreateInstance(class, properties)
 end
 
 local TweenService = game:GetService("TweenService")
-local Notifications = {}
-local GUI = Instance.new("ScreenGui", game.CoreGui)
-
+local ritual = {}
+local GUI = Instance.new("ScreenGui")
 GUI.Name = randomletters(10)
 GUI.ResetOnSpawn = false
+GUI.Parent = game:GetService('CoreGui')
 
-function Notifications.Create(Title,Desc,Time,TitleColor)
+function ritual:send(Title,Desc,Time,TitleColor)
 	assert(typeof(Title) == "string", "Title isn't a string!")
 	assert(typeof(Time) == "number", "Time isn't a number!")
 	local Frame = Utilities.CreateInstance("Frame", {
@@ -136,10 +136,10 @@ function Notifications.Create(Title,Desc,Time,TitleColor)
 	Frame:TweenPosition(UDim2.new(1.27, 0,1, 0), "In", "Quad", 1)
 end
 
-function Notifications:Clear()
+function ritual:clear()
     if typeof(GUI) == 'Instance' then
         GUI:Destroy()
     end
 end
 
-return Notifications
+return ritual
