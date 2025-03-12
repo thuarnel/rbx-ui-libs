@@ -8,5 +8,3 @@ if type(notification_library) == 'table' then
     notification_library.send_notification("Test Title - Error", "Test Body", "error")
     notification_library.send_notification("Test Title - Custom", "Test Body", Color3.fromRGB(255, 255, 255), { body_font = Enum.Font.Cartoon, wait_time = 4 })
 end
-
-

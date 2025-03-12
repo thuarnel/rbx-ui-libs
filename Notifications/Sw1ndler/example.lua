@@ -1,4 +1,4 @@
-local notifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Notification%20Library/main.lua"))()
+local notifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/thuarnel/rbx-ui-libs/refs/heads/main/Notifications/Sw1ndler/main.lua"))()
 
 notifLib:CreatePromptNotif({
     TweenSpeed = 1,
