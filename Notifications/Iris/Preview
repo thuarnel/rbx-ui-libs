@@ -1,0 +1,8 @@
+local Iris = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
+
+Iris.Notify('Title', 'Description', 'rbxasset://textures/ui/GuiImagePlaceholder.png', {
+    Duration = 5,
+    Main = {
+        Rounding = false
+    }
+})

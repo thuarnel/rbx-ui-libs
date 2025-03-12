@@ -36,4 +36,4 @@ function Notify(titletxt, text, time)
     GUI:Destroy();
 end
 
-Notify("You are a cunt", "yeah good boi", 5)
+Notify('Title', 'Description', 5)
